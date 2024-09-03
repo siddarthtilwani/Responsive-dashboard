@@ -1,0 +1,14 @@
+.Card{
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+    /* gap: 0.5rem; */
+    justify-content: space-evenly;
+   
+    padding:12px 12px 12px 20px;
+    text-align: left;
+    
+    height: 136px;
+    width:204px;
+}

@@ -1,0 +1,23 @@
+.Maindash{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height:90vh;
+    overflow-y: scroll;
+    margin:.5rem
+    /* overflow: scroll  !important; */
+}
+.Maindash::-webkit-scrollbar {
+    display: none;                      /* Chrome, Safari: hide scrollbar */
+}
+.detail{
+    display: grid;
+    gap:1rem;
+    grid-template-columns: 13rem 13rem 13rem;
+    margin-bottom: 1rem;
+}
+.bigcardgrid{
+    display: grid;
+    grid-template-columns: 17rem 17rem;
+    gap: 1rem;
+}

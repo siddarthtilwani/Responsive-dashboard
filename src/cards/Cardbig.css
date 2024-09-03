@@ -1,0 +1,42 @@
+.details{
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+   
+    gap: 1.5rem;
+    
+    text-align: left;
+    height: 5rem;
+    font-size: 15px;
+  
+  
+}
+.Cardbig{
+    display: flex;
+    flex-direction: row;
+    height: 190px;
+    width: 312px;
+    border: black 2px solid;
+    margin: 0;
+    padding: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+
+    
+}
+.graph {
+    height: 10rem !important;
+    
+    width: 10rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden; /* This will ensure that if the chart is larger, it won't overflow */
+}
+.graph-detail{
+    width: 5rem ;
+    font-size: 11px;
+
+    
+}
