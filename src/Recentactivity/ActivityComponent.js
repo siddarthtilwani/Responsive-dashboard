@@ -2,15 +2,14 @@ import { display, fontSize, padding, textAlign, width } from "@mui/system";
 import React, { useState } from "react";
 
 const ActivityComponent = (props) => {
-  // Sample activities array
+  
   const activities = [
     { time: "10.40 AM, Fri 10 Sept 2021", description: "You Posted a New Job" },
     { time: "11.15 AM, Fri 10 Sept 2021", description: "You Completed a Task" },
     { time: "12.30 PM, Fri 10 Sept 2021", description: "You Received a Message" },
-    // Add more activities as needed
+    
   ];
 
-  // State to track whether to show all activities
   const [showAllActivities, setShowAllActivities] = useState(false);
 
   const handleShowAllClick = () => {
@@ -51,7 +50,6 @@ const ActivityComponent = (props) => {
   );
 };
 
-// Basic styling using JS objects
 const styles = {
   container: {
     backgroundColor: "#1B204A",
@@ -85,7 +83,6 @@ const styles = {
     alignItems: 'center',
     justifyContent: "center",
 
-    // fontSize: "12px",
 
     backgroundColor: "#161E54",
     height: '3rem',

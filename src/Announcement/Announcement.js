@@ -1,12 +1,13 @@
-// Announcements.js
+
 import React, { useState } from 'react';
-import announcements from './Announcementdata'; // Import the announcements array
+import announcements from './Announcementdata'; 
 import Anncard from './Anncard';
 import './Announcement.css'
+import { Button } from '@mui/material';
 const Announcement = () => {
-  const [visibleAnnouncements, setVisibleAnnouncements] = useState(3); // State to manage the number of visible announcements
+  const [visibleAnnouncements, setVisibleAnnouncements] = useState(3); 
 
-  // Function to handle showing all announcements
+  
   const showAllAnnouncements = () => {
     setVisibleAnnouncements(announcements.length);
   };
@@ -19,19 +20,29 @@ const Announcement = () => {
   return (
     <div className="announcements-container">
       <div className='date'>
-      <h2>Announcements</h2>
-      <p >{formattedDate}</p>
+        <h2>Announcements</h2>
+        <p >{formattedDate}</p>
       </div>
-      {/* Display the announcements */}
-    <div className='content'>
-    {announcements.slice(0, visibleAnnouncements).map((announcement) => (
-       <Anncard time={announcement.time} content={announcement.content} />
-      ))}
-    </div>
+     
+      <div className='content'>
+        {announcements.slice(0, visibleAnnouncements).map((announcement) => (
+          <Anncard time={announcement.time} content={announcement.content} />
+        ))}
+      </div>
 
-      {/* "See All" button */}
+     
       {
-        <button className='btn content' onClick={()=>(visibleAnnouncements===announcements.length)?setVisibleAnnouncements(4):setVisibleAnnouncements(announcements.length)}>{visibleAnnouncements===announcements.length ?'Hide All Announcements' :'See All Announcements'}</button>
+        <Button
+          className="btn content"
+          variant="contained"
+          color="white"
+          fullWidth
+
+          sx={{ mt: 3, borderRadius: 3 }}
+          style={{ color: 'red' }}
+          onClick={() => (visibleAnnouncements === announcements.length) ? setVisibleAnnouncements(3) : setVisibleAnnouncements(announcements.length)}>{visibleAnnouncements === announcements.length ? 'Hide All Announcements' : 'See All Announcements'}
+
+        </Button>
       }
     </div>
   );

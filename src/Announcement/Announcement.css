@@ -47,4 +47,14 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
+    border-color:#E0E0E0 ;
+    
+}
+@media (max-width:390px){
+    .date{
+        font-size: 13px;
+    }
+    .data{
+        font-size: 11px;
+    }
 }

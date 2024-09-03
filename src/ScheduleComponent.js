@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import { Box, Button, Card, CardContent, Typography, Grid, Divider } from "@mui/material";
 
 const ScheduleComponent = () => {
-  // State to track new schedule creation
   const [scheduleCreated, setScheduleCreated] = useState(false);
 
-  // Sample schedules
   const prioritySchedule = [
     { task: "Review candidate applications", time: "11.30 AM" },
   ];
@@ -30,7 +28,6 @@ const ScheduleComponent = () => {
         <Typography variant="body2" color="textSecondary">
           Today, 13 Sep 2021
         </Typography>
-        {/* Placeholder for a date picker, dropdown, etc. */}
       </Grid>
 
       <Typography variant="subtitle2" gutterBottom>
