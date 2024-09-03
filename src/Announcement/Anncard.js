@@ -10,8 +10,8 @@ const Anncard=(props)=>{
         <span style={{fontWeight:"bold",color:"#303030"}}>{props.content}</span>
         <span style={{color:"#686868"}}>{props.time}</span>
         </div>
-        <div className="dots"><img src={pinicon} onClick={()=>setispin(!ispin)} style={{filter:(ispin)&&'invert(100%)'}}/>
-        <img src={doticon}/></div>
+        <div className="dots"><img src={pinicon} onClick={()=>setispin(!ispin)} style={{filter:(ispin)&&'invert(100%)'}} alt="pin"/>
+        <img src={doticon} alt="dots"/></div>
 
        </div>
     )
