@@ -1,7 +1,6 @@
-import react from 'react'
+
 import Cards from '../cards/Cards'
 import './Maindash.css'
-import { Grid } from '@mui/material';
 
 import Employeechart from '../charts/Employeechart';
 import Cardbig from '../cards/Cardbig';

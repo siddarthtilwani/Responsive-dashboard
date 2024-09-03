@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Button, Card, CardContent, Typography, Grid, Divider } from "@mui/material";
+import { Box, Button, Card, CardContent, Typography, Grid } from "@mui/material";
 
 const ScheduleComponent = () => {
   const [scheduleCreated, setScheduleCreated] = useState(false);

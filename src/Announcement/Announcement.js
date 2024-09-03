@@ -7,10 +7,6 @@ import { Button } from '@mui/material';
 const Announcement = () => {
   const [visibleAnnouncements, setVisibleAnnouncements] = useState(3); 
 
-  
-  const showAllAnnouncements = () => {
-    setVisibleAnnouncements(announcements.length);
-  };
   const currentDate = new Date();
   const formattedDate = currentDate.toLocaleDateString('en-US', {
     year: 'numeric',

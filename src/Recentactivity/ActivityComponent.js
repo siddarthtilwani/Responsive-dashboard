@@ -1,4 +1,3 @@
-import { display, fontSize, padding, textAlign, width } from "@mui/system";
 import React, { useState } from "react";
 
 const ActivityComponent = (props) => {

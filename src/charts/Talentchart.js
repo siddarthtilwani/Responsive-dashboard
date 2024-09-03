@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { LineChart } from '@mui/x-charts/LineChart';
-import { Hidden } from '@mui/material';
 
 export default function Employeechart() {
   return (
