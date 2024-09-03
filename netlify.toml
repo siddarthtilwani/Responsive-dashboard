@@ -1,0 +1,11 @@
+[build]
+  # Directory for the built React files
+  publish = "build"
+  # Command to build the React app
+  command = "npm run build"
+
+[[redirects]]
+  # Redirect all requests to `index.html` for a single-page app (SPA)
+  from = "/*"
+  to = "/index.html"
+  status = 200
